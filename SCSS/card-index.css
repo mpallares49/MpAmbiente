@@ -1,0 +1,37 @@
+/*---INDEX--------*/
+/*---animaciones de index--------*/
+.card-img-filter {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+
+.texto__index {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #615f5f;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: whitesmoke;
+  margin: 3px;
+  opacity: 0.80;
+}
+
+.card__index {
+  border-radius: radius;
+  -webkit-box-shadow: 1px 1px 12px 0px black;
+          box-shadow: 1px 1px 12px 0px black;
+  -webkit-transition-duration: .7s;
+          transition-duration: .7s;
+  -webkit-clip-path: polygon(50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%, 0 0);
+          clip-path: polygon(50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%, 0 0);
+}
+
+.card-effect:hover .card__index {
+  -webkit-clip-path: polygon(50% 0, 50% 0, 100% 50%, 100% 50%, 50% 100%, 50% 100%, 0 50%, 0 50%);
+          clip-path: polygon(50% 0, 50% 0, 100% 50%, 100% 50%, 50% 100%, 50% 100%, 0 50%, 0 50%);
+}
+
+.card-effect:hover .card-img-overly {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+/*# sourceMappingURL=card-index.css.map */

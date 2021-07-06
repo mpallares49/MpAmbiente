@@ -1,0 +1,59 @@
+/*OPERACIONES-VARIABLES*/
+$fuente-color:rgb(97, 95, 95);
+$tamaño-fuente:12px;
+$fondo: #eef0e0be;
+$fuente: Verdana, Geneva, Tahoma, sans-serif;
+
+.container__header{
+	display: flex;
+	justify-content: space-between; 
+	border-bottom: 3px ridge grey;
+	background-color:$fondo;
+	font-family: $fuente;
+	width: 100%;
+		.header__text{
+			color:$fuente-color;
+			font-size: $tamaño-fuente;
+		}
+		
+}
+
+.header__S{
+	background-image: url("../Media/header.png");
+	background-position: center;
+	background-size: cover;
+	padding: 20px;
+	padding-bottom: 80px;
+	height: 800px;
+	text-align: justify;
+	height: auto;
+	width: 100%;
+
+	.vh__50{
+		height: 50vmin;
+	}
+
+	.vh__logo{
+		width: 100px;
+		height: 50px;
+		font-weight: bold;
+	
+
+	}
+	.vh__menu{
+		padding-top: 5px;
+	
+	}
+
+	.vh__textos{
+		width: auto;
+
+	
+	}
+
+
+	
+}
+
+
+

@@ -1,0 +1,221 @@
+@mixin caracteristicas {
+    width: 100%;
+    height: 100%;
+}
+
+$fuente:  Verdana, Geneva, Tahoma, sans-serif;
+$color-fuente:rgb(97, 95, 95);
+
+/*---INDEX--------*/
+/*---OPERACIÓN EXTEND--------*/
+
+.card-index{
+    @extend .card__index;
+    > imagenes{
+      @extend .card-img-filter; 
+      max-width: 1200px;
+    }
+    >textos {
+        @extend .texto__index;
+    }
+    >animaciones{
+        @extend .card-effect:hover;
+        
+    }
+
+}
+
+
+/*---participantes--------*/
+.comments{
+	background-image: url("../Media/participantes.jpg");
+	background-position: center;
+	background-size: cover ;
+    box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 3);
+	padding: 10px;
+	margin-top: 30px;
+	height: 600px;
+}
+
+.foto-participante1{
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 3px ridge white;
+}
+.participante__texto{
+    font-family: $fuente;
+    color: $color-fuente;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(197, 189, 189, 0.719);
+}
+
+/*---Quienes somos--------*/
+.quienessomos__text{
+    font-family: $fuente;
+    text-align: center;
+    padding: 40px;
+    margin:20px;
+    line-height: 30px;
+
+
+    .quienessomos__text1{
+        color:rgb(4, 83, 40);
+        font-weight: bold;
+        
+    }
+    .quienessomos__text2{
+        color: slategray;
+        font-size: 16px;
+        
+       
+    }
+}
+.vision-mision{
+    display: flex;
+    color:$color-fuente;
+    font-size: 16px;
+    padding: 40px;
+    max-width: 1400px;
+    justify-content: space-between;
+
+    .item-texto{
+        background: linear-gradient(to top, lightgrey , lightgreen);
+        padding: 20px;
+    }
+ 
+}
+
+/*---Servicios.--------*/
+.servicios__textos{
+    font-family: $fuente;
+    justify-content: center;
+
+    .servicios__texto1{
+        color:rgb(61, 60, 60);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .servicios__texto2 {
+        color:rgb(4, 83, 40);
+        font-weight: bold;
+    }
+    .servicios__texto3{
+        color: slategrey;
+        font-size: 16px;
+    }
+    
+    .servicios__dropdown{
+        width: 200px;
+        color: rgb(46, 40, 40);
+        font-family: $fuente;
+        margin-bottom: 30px;
+    }
+}
+
+
+.container__servicios{
+    @include caracteristicas;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin:20x;
+    border-bottom: rgba(136, 39, 39, 0.719);
+}
+
+.card{
+    width: 330px;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    transition: all 0.5s;
+    background-color: rgb(250, 250, 250);
+
+}
+.card:hover{
+    transform: translate(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card__texto{
+font-size: 16px;
+font-family: $fuente;
+
+} 
+.card__textos2{
+font-weight: 20px;
+font-family: $fuente;
+color:$color-fuente;
+
+}  
+.card__img{
+        width: 330px;
+        height: 300px;
+    
+}
+.card__enlace{
+    width: 200px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+   
+}
+/*-----Novedades--------*/
+#accordion{
+    @include caracteristicas;
+    padding-bottom: 10px;
+}
+.novedades__texto{
+    color:rgb(4, 83, 40);
+    font-weight: bold;
+}
+.novedades__texto1{
+    color:rgb(61, 60, 60);
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
+/*---Contacto--------*/
+
+.contacto__textos{
+    color:rgb(4, 83, 40);
+    font-weight: bold;
+    font-family: $fuente;
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+
+}
+   
+.contacto__texto1{
+    color:slategrey;
+    font-size: 18px;
+    text-align: center;
+    background-color: lightgreen;
+
+}
+#tabla-contacto{
+	font-family: verdana;
+	font-size: 14px;
+	background: linear-gradient(to top, lightgrey , lightgreen);
+	width: 400px;
+	padding: 20px;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	line-height:30px;
+
+}
+   
+
+
+
+
+

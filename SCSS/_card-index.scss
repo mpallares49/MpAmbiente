@@ -1,0 +1,33 @@
+$fuente:  Verdana, Geneva, Tahoma, sans-serif;
+$color-fuente:rgb(97, 95, 95);
+
+/*---INDEX para extend--------*/
+/*---animaciones de index--------*/
+
+.card-img-filter{
+	filter: brightness(0.8);
+}
+.texto__index{
+    font-family: $fuente;
+    color: $color-fuente;
+    font-size: 16px;
+    text-align: center;
+    background-color: rgb(245, 237, 237);
+    opacity: 0.80;
+    
+}
+
+.card__index{
+    border-radius: radius;
+    box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 3);
+	transition-duration: .7s;
+	clip-path: polygon(50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%,  0 100%, 0 50%, 0 0);
+}
+
+.card-effect:hover .card__index{
+	clip-path: polygon(50% 0, 50% 0, 100% 50%, 100% 50%, 50% 100%,  50% 100%, 0 50%, 0 50%);
+
+}
+.card-effect:hover .card-img-overly{
+	transform: scale(0.9);
+}
